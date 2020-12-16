@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI-lab</title>
+
+  <style>
+    /* 부모인 body 를 기준으로 위치를 맞출거므로 position 속성을 absolute로 해줌 ->
+  absolute는 자신의 위치를 부모 객체를 대상으로 맞춤
+  position : absolute;
+  */
+    body {
+      background: rgb(255, 254, 242);
+    }
+
+    .location-center {
+      /* #96d4d9 */
+      /* background: rgb(150, 212, 217); */
+      background-image: url("book.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 10%;
+      margin-left: 25%;
+      width: 50%;
+      height: 600px;
+      border: 2px solid white;
+      padding: 30px;
+    }
+
+    .login-area {
+      text-align: center;
+      /* background: #000000; */
+    }
+
+    .login-form {
+      text-align: center;
+    }
+
+    .center {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .size {
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: rgb(255, 254, 242, 0);
+      border: 0px solid white;
+      border-bottom: 1px solid white;
+      padding-left: 12px;
+    }
+
+    .size::placeholder {
+      color: rgb(255,255,255);
+    }
+
+    .btn-size {
+      width: 100px;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: rgb(255, 254, 242, 1);
+      border: 1px solid white;
+      border-radius: 15%;
+      padding-left: 12px;
+    }
+
+    .sns-naver {
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: rgb(30, 201, 1);
+      border: 0px solid white;
+      border-radius: 5%;
+      padding-left: 12px;
+    }
+
+    .sns-kakao {
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: rgb(30, 201, 1);
+      border: 0px solid white;
+      border-radius: 5%;
+      padding-left: 12px;
+    }
+
+    .sns-facebook {
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: rgb(30, 201, 1);
+      border: 0px solid white;
+      border-radius: 5%;
+      padding-left: 12px;
+    }
+
+    .find-info {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+
+divide
+<body>
+  <div class="location-center" id="container-fluid">
+    <h2 style="text-align:center;color:white;">login</h2>
+    <div class="">
+      <form action="">
+        <div class="login-area">
+          <input class="size" type="text" name="id" placeholder="아이디"><br>
+        </div>
+        <div class="login-area">
+          <input class="size" type="password" name="pwd" placeholder="비밀번호">
+        </div>
+        <input class="center btn-size btn-dark" type="submit" name="login_btn" value="로그인">
+      </form>
+    </div>
+
+
+    <div class="find-info">
+      <button class="center btn-size btn-dark" onclick="location.href='/signup'">회원가입</button>
+    </div>
+
+    <div id="sns">
+      <div> <button class="center sns-naver btn-dark">네이버</button></div>
+      <div> <button class="center sns-kakao btn-dark">카카오</button></div>
+      <div> <button class="center sns-facebook btn-dark">페이스북</button></div>
+    </div>
+  </div>
+</body>
+
+</html>
